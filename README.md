@@ -47,10 +47,11 @@ The OpenMC Constructive Solid Geometry (CSG) was built and verified from the mic
 ![Core Assembly](images/core_assembly.png)
 
 ## Preliminary Results
-* **Cold-State Baseline (294 K):** The integration of heavy Boron-10 Lumped Burnable Poisons (LBPs) alongside the reduced 9.9% enrichment successfully suppressed excess reactivity, yielding a realistic, highly manageable startup $k_{eff}$ of **1.08924 ± 0.00026**.
-* **Hot-State Operations (1173.15 K):** `[Insert your final Hot State k-eff here once Notebook 2 finishes]`
+* **Cold-State Baseline (294 K):** The integration of heavy Boron-10 Lumped Burnable Poisons (LBPs) alongside the reduced 9.9% enrichment successfully suppressed excess reactivity, yielding a realistic, highly manageable startup $k_{\infty}$ of **1.08924 ± 0.00026**.
+* **Hot-State Operations (1173.15 K):** Doppler broadening of U-238 absorption resonances successfully reduced the baseline reactivity, resulting in a stable, safe operating $k_{\infty}$ of **1.02684 ± 0.00026**.
 * **20-Year Depletion (45 MWt):** 
 
-![k-eff vs Time Letdown Curve](images/keff_letdown.png)
+![k-infinity vs Time Letdown Curve](images/keff_letdown.png)
 
 ![Isotopic Evolution (U-235 vs Pu-239)](images/isotopic_evolution.png)
+
