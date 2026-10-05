@@ -1,7 +1,7 @@
 # OpenMC Core Adaptation: MHTGR-350 to a 45 MWt FCM Microreactor
 
 **Author:** Martin Zurita  
-**Objective:** A computational reactor physics study adapting the internationally validated MHTGR-350 macro-geometry to model a 45 MWt UIUC microreactor utilizing Fully Ceramic Micro-encapsulated (FCM) TRISO fuel.
+**Objective:** A computational reactor physics study adapting the validated MHTGR-350 macro-geometry to model a 45 MWt UIUC microreactor utilizing Fully Ceramic Micro-encapsulated (FCM) TRISO fuel.
 
 ## Project Overview
 This repository contains a full Monte Carlo neutron transport and depletion study utilizing **OpenMC**. The project demonstrates a bottom-up "Hybrid Core" methodology:
@@ -14,7 +14,7 @@ The transition from a 350 MWt macroscopic core to a 45 MWt microreactor was achi
 ## Repository Structure
 
 * **`01_MHTGR_Benchmark/`** 
-  * Contains the foundational OpenMC validation scripts based on the General Atomics MHTGR-350 design. Features 15.5% enriched fuel in a standard graphite matrix to establish baseline $k_{eff}$ stability.
+  * Contains the foundational OpenMC validation scripts based on the General Atomics MHTGR-350 design. Features 15.5% enriched fuel in a standard graphite matrix to establish baseline $k_{\infty}$ stability.
 * **`02_UIUC_Microreactor/`** 
   * Contains the modified core scripts for the 45 MWt design. Features updated material definitions for 9.9% enriched FCM pellets (2.3 cm diameter).
   * **`01_Cold_State.ipynb`**: Baseline criticality at 294 K.
@@ -23,7 +23,7 @@ The transition from a 350 MWt macroscopic core to a 45 MWt microreactor was achi
 
 ## Methodology & Core Physics
 * **Cross-Sections:** ENDF/B-VII.1 continuous-energy data.
-* **Thermal Physics:** On-the-fly cross-section interpolation was utilized between the 900 K and 1200 K datasets to simulate the 1173.15 K (900°C) operating state.
+* **Thermal Physics:** Cross-section interpolation was utilized between the 900 K and 1200 K datasets to simulate the 1173.15 K (900°C) operating state.
 * **Depletion Volume Scaling:** The physical FCM pellet dimensions were used to calculate the exact heavy metal mass. The depletable volume was scaled using 216 fuel channels × 31 pellets per channel × 85 physical blocks.
 * **Boundary Conditions:** A 2D Radial Super-Cell model was utilized with reflective boundary conditions on the outer hexagonal prism to simulate an infinite repeating lattice.
 
