@@ -51,7 +51,7 @@ The OpenMC Constructive Solid Geometry (CSG) was built and verified from the mic
 * **Hot-State Operations (1173.15 K):** Doppler broadening of U-238 absorption resonances successfully reduced the baseline reactivity, resulting in a stable, safe operating $k_{\infty}$ of **1.02684 ± 0.00026**.
 * **20-Year Depletion (45 MWt):** 
 
-![k-infinity vs Time Letdown Curve](images/keff_letdown.png)
+![k-infinity vs Time Letdown Curve](images/kinf_letdown.png)
 
 ![Isotopic Evolution (U-235 vs Pu-239)](images/isotopic_evolution.png)
 
